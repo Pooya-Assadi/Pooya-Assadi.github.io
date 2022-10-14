@@ -39,9 +39,30 @@
     height: 40px;
     line-height: 40px;
     text-align: center;
-    position: a;
 }
 
-.searchBox {
-    width: calc(1000%);
+.VazirFont {
+    font-family: Vazir;
+    font-size: 14px;
+    color: black;
+}
+
+.offcanvasEdit {
+    top: 500px;
+}
+
+.listHeight {
+    height: 40px;
+    line-height: 40px;
+}
+
+.borderAndShadowSearchBox {
+    height: 40px;
+    border: 2px solid rgb(229, 232, 235);
+    border-radius: 8px;
+}
+
+.borderAndShadowSearchBox:hover {
+    border-color: rgb(145, 153, 161);
+    box-shadow:  0  .125rem .25rem rgba(0, 0, 0, 0.1);
 }
