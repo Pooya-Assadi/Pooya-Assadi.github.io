@@ -44,7 +44,6 @@
 .VazirFont {
     font-family: Vazir;
     font-size: 14px;
-    color: black;
 }
 
 .offcanvasEdit {
@@ -64,5 +63,471 @@
 
 .borderAndShadowSearchBox:hover {
     border-color: rgb(145, 153, 161);
-    box-shadow:  0  .125rem .25rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.1);
+}
+
+.bg1 {
+    background-image: url("../images/bg1.jpg");
+}
+
+.VazirB {
+    font-family: VazirB;
+    font-size: calc(15px + (20 - 10) * ((100vw - 768px) / (1600 - 768)));
+}
+
+.texts {
+    top: 15%;
+    right: 10%;
+}
+
+.bgimg {
+    opacity: 0.7;
+}
+
+.VazirLIF {
+    font-family: Vazir;
+}
+
+.fsi {
+    font-size: calc(13px + (13 - 10) * ((100vw - 768px) / (1600 - 768)));
+}
+
+.form-container {
+    font-family: 'Vazir', sans-serif;
+}
+
+.modalH {
+    max-height: 800px;
+}
+
+.title {
+    font-family: VazirB;
+    color: #2081e2;
+}
+
+.pCustom1,
+.pCustom2,
+.pCustom3 {
+    font-size: 18px;
+    padding: 5px 0px 0px;
+}
+
+.pCustom1 {
+    color: #e34133;
+}
+
+.pCustom2 {
+    color: #4064ac;
+}
+
+.pCustom3 {
+    color: #1d9bf0;
+}
+
+.FA1,
+.FA2,
+.FA3 {
+    height: 30px;
+    width: 30px;
+    border: 1px solid transparent;
+    transition: all 0.2s ease 0s;
+}
+
+.FA1:hover {
+    color: #fff;
+    background-color: #e34133;
+}
+
+.FA2:hover {
+    color: #fff;
+    background-color: #4064ac;
+}
+
+.FA3:hover {
+    color: #fff;
+    background-color: #1d9bf0;
+}
+
+.FL1:hover .pCustom1,
+.FL2:hover .pCustom2,
+.FL3:hover .pCustom3 {
+    color: #fff;
+}
+
+.form-control:focus {
+    border: 1.5px solid #1d9bf0;
+}
+
+.form-control:hover {
+    box-shadow: -1px 1px 1px 0px rgba(0, 0, 0, 0.166);
+}
+
+.form-control::placeholder {
+    color: #e1e1e1;
+    font-size: 14px;
+}
+
+.btnContainer {
+    padding-bottom: 43px;
+}
+
+.modalBtn {
+    transition: all 0.1s ease;
+    box-shadow: 4px 4px 0px 0px #a8ddfd, 5.5px 6px 0px 0px black;
+}
+
+.modalBtnFS {
+    font-family: VazirB;
+}
+
+.btnCustom {
+    color: white;
+    background-image: linear-gradient(to right, #24b6f5, #4481eb, #04befe, #3f86ed);
+    background-size: 250% 100%;
+    transition: all .4s ease-in-out;
+    border: 1.px solid black;
+    transition: all 0.3s ease;
+    z-index: 11;
+}
+
+.secBtn {
+    background-color: #005b97;
+    color: transparent;
+    border: 1.8px solid black;
+    z-index: 12px;
+    top: 3px;
+    right: -3px;
+}
+
+.btnContainer:hover .btnCustom {
+    color: white;
+    background-position: 100% 0;
+    color: white;
+    border: 1.8px solid black;
+    box-shadow: 0px 0px;
+    transform: translate(3px, 3px);
+}
+
+.btnContainer:hover .secBtn {
+    background-color: transparent;
+    border: 1.5px solid transparent;
+}
+
+.hrM {
+    margin-top: 58px;
+}
+
+.btn-hover {
+    font-family: Vazir;
+    color: #fff;
+    text-align: center;
+    padding: 10px 15px;
+    background-size: 300% 100%;
+    transition: all .4s ease-in-out;
+}
+
+.color-9 {
+    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.705);
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    color: white;
+    transform: scale(1.1, 1.1);
+}
+
+.BgBtn {
+    background-color: #167ec4;
+}
+
+.BgBtn1 {
+    background-color: #167ec4;
+    border-left: 2px solid #04befe;
+}
+
+.BgBtn2 {
+    background-color: #1d9bf0;
+    border-right: 2px solid black;
+}
+
+.BgBtn2:hover {
+    background-color: #167ec4;
+}
+
+.clseBtn {
+    width: 10%;
+}
+
+.mdl {
+    max-width: 420px;
+}
+
+.card-text {
+    font-size: 2vw;
+}
+
+@media all and (max-width:575px) {
+    .accountPic {
+        width: 61px;
+        height: 61px;
+        position: absolute;
+        border: 3.3px solid white;
+        border-radius: 3px;
+        left: 20px;
+        transition-duration: 350ms;
+        top: -30px;
+
+    }
+
+    .accountName {
+        left: 18px;
+        top: 38px;
+        color: black;
+        font-family: Poppin;
+        transition-duration: 300ms;
+    }
+
+    .like {
+        top: 2px;
+        right: 50px;
+        font-size: 19px;
+        color: rgb(31, 31, 31);
+        transition-duration: 200ms;
+    }
+
+    .comment {
+        top: 2px;
+        right: 20px;
+        font-size: 19px;
+        color: rgb(31, 31, 31);
+        transition-duration: 200ms;
+    }
+
+    .chevR {
+        right: 5px;
+        bottom: calc(30%);
+    }
+
+    .chevR2 {
+        right: 5px;
+        bottom: calc(45%);
+    }
+
+    .chevL {
+        left: 5px;
+        bottom: calc(30%);
+    }
+
+    .chevL2 {
+        left: 5px;
+        bottom: calc(45%);
+    }
+}
+
+
+@media all and (min-width:576px) and (max-width:767px) {}
+
+@media all and (min-width:768px) and (max-width:991px) {}
+
+.BgImg {
+    width: auto;
+    height: 600px;
+}
+
+@media all and (min-width:992px) and (max-width:1199px) {}
+
+@media all and (min-width:1200px) and (max-width:1399px) {}
+
+@media all and (min-width:1400px) {}
+
+
+
+.bgColor {
+    background-color: #000;
+}
+
+.fTitle {
+    font-family: VazirB;
+    font-size: 4vw;
+    color: #ebedef;
+    text-shadow: 0px 3px 0px #bdbfc1a1;
+}
+
+.fText {
+    font-family: Vazir;
+    font-size: 1.5vw;
+    color: #bdbfc1;
+}
+
+.fTitlePos {
+    top: 28%;
+}
+
+.fTextPos {
+    top: 51%;
+}
+
+.btnPos {
+    top: 64%;
+    text-align: center;
+}
+
+header {
+    background-image: url(../images/BGM.jpg);
+    background-size: cover;
+}
+
+.VazirBFont {
+    font-family: VazirB;
+}
+
+.VazirFontM {
+    font-family: Vazir;
+}
+
+.T {
+    font-family: VazirB;
+}
+
+.shCart {
+    width: 40px;
+    height: 40px;
+    top: 5px;
+    right: 5px;
+    font-size: 19px;
+    background-color: rgba(73, 73, 73, 0.3);
+    box-shadow: 0px 0px 4px 2px rgba(167, 167, 167, 0.4);
+    transition-duration: 150ms;
+    z-index: 1;
+}
+
+.shCartI {
+    margin: 12px 11px;
+    color: white;
+    transition-duration: 150ms;
+}
+
+.shCartA {
+    width: 40px;
+    height: 40px;
+}
+
+.chevL,
+.chevR,
+.chevR2,
+.chevL2 {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(36, 36, 36, 0.5);
+    transition-duration: 150ms;
+    font-size: 19px;
+    z-index: 2;
+}
+
+.chevRI,
+.chevLI {
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.784);
+    transition-duration: 150ms;
+}
+
+.chevRA.chevLA {
+    width: 40px;
+    height: 40px;
+}
+
+.shCart:hover {
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.4);
+}
+
+.shCart:hover .shCartI {
+    color: rgba(34, 92, 0, 0.952);
+}
+
+.chevR:hover,
+.chevR2:hover {
+    color: black;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.4);
+}
+
+.chevL:hover,
+.chevL2:hover {
+    color: black;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.4);
+}
+
+.chevR:hover .chevRI,
+.chevR2:hover .chevRI {
+    color: black;
+}
+
+.chevL:hover .chevLI,
+.chevL2:hover .chevLI {
+    color: black;
+}
+
+.like:hover {
+    color: #ea4855;
+    transform: scale(1.1);
+}
+
+.comment:hover {
+    color: #737373;
+    transform: scale(1.1);
+}
+
+.accountPic:hover {
+    transform: scale(1.15);
+}
+
+.accountName:hover {
+    transform: scale(1.12);
+    color: rgb(0, 0, 158);
+}
+
+.photoFlow {
+    overflow: hidden;
+}
+
+.hoverImg {
+    transition-duration: 800ms;
+    z-index: -1;
+}
+
+.textHover1 {
+    top: 10%;
+    left: 10%;
+}
+
+.carousel-item:hover .hoverImg {
+    transform: scale(1.1);
+    filter: brightness(75%) blur(0.1px);
+}
+
+.carouselContainer:hover .hoverImg {
+    transform: scale(1.1);
+    filter: brightness(75%) blur(0.1px);
+}
+
+.photoFlow::after {
+    width: 100px;
+    height: 4px;
+    color: blue;
+}
+
+.textTransparent {
+    color: transparent;
+    font-family: VazirB;
+}
+
+.carousel-item:hover .textTransparent {
+    color: white;
+}
+
+.carouselContainer:hover .textTransparent {
+    color: white;
 }
