@@ -309,8 +309,8 @@
 }
 
 .bgGr {
-    background-image: linear-gradient(to bottom, #eafffb, #cce3f9, #c7e3f9, #f1dfff);
-    background: linear-gradient(0deg, rgb(255, 255, 255), rgba(255, 0, 0, 0) 40.71%), linear-gradient(315deg, #f1dfff, #f1dfff, #fdefff,#d1ecfc, #bedcf7, rgba(0, 255, 0, 0) 80.71%), linear-gradient(225deg,#eafffb, #dcfff9,#dcfff9, #f1dfff, rgba(0, 0, 255, 0) 70.71%);
+
+    background: linear-gradient(0deg, rgb(255, 255, 255), rgba(255, 0, 0, 0) 70.71%), linear-gradient(315deg, #f1dfff, #f1dfff, #fdefff, #d1ecfc, #bedcf7, rgba(0, 255, 0, 0) 70.71%), linear-gradient(225deg, #eafffb, #dcfff9, #dcfff9, #f1dfff, rgba(0, 0, 255, 0) 70.71%);
 }
 
 .chevL {
@@ -328,26 +328,80 @@
     bottom: calc(45%);
 }
 
-@media all and (max-width:575px) {}
-
-@media all and (min-width:576px) and (max-width:767px) {}
-
-@media all and (min-width:768px) and (max-width:991px) {}
-
-.BgImg {
-    width: auto;
-    height: 600px;
+.btnColor{
+    background-image: linear-gradient(to right,rgba(255, 156, 240, 0.1), #00b7ff0b);
+    border: 2px solid #d8dadc;
+    padding: 10px 12px;
+    transition: all 0.2s ease 0s;
 }
 
-@media all and (min-width:992px) and (max-width:1199px) {}
+.btnColor:hover {
+    box-shadow:0px 2px 10px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05,1.05);
+}
 
-@media all and (min-width:1200px) and (max-width:1399px) {
-    .maxHeightpic {
-        max-height: 350px;
+.categoriesPic, .categoriesPic1 {
+    max-height: 72px;
+}
+
+.categoriesPic1 {
+    margin-right: -9px;
+}
+
+.numbers {
+    padding-left: 37px;
+    color: #818a92;
+    font-family: VazirB;
+    font-size: 14px;
+}
+
+.categoriesTitle {
+    font-family: VazirB;
+}
+
+.categoriesHover {
+    transition: all 0.3s ease;
+}
+
+.categoriesHover:hover {
+    background-image: linear-gradient(to right,#fff , #f1dfff3a, #dff8ff6e,#fff );
+}
+
+@media all and (max-width:575px) {
+    .line {
+        width: 96%;
     }
 }
 
-@media all and (min-width:1400px) {}
+@media all and (min-width:576px) and (max-width:767px) {
+    .line {
+        width: 96%;
+    }
+}
+
+@media all and (min-width:768px) and (max-width:991px) {
+.line {
+    width: 96%;
+}
+}
+
+@media all and (min-width:992px) and (max-width:1199px) {
+    .line {
+        width: 94%;
+    }
+}
+
+@media all and (min-width:1200px) and (max-width:1399px) {
+    .line {
+        width: 94%;
+    }
+}
+
+@media all and (min-width:1400px) {
+    .line {
+        width: 94%;
+    }
+}
 
 
 
