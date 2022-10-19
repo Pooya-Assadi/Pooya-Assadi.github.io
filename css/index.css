@@ -267,64 +267,68 @@
     font-size: 2vw;
 }
 
-@media all and (max-width:575px) {
-    .accountPic {
-        width: 61px;
-        height: 61px;
-        position: absolute;
-        border: 3.3px solid white;
-        border-radius: 3px;
-        left: 20px;
-        transition-duration: 350ms;
-        top: -30px;
+.accountPic {
+    width: 61px;
+    height: 61px;
+    position: absolute;
+    border: 3.3px solid white;
+    border-radius: 3px;
+    left: 20px;
+    transition-duration: 350ms;
+    top: -30px;
 
-    }
-
-    .accountName {
-        left: 18px;
-        top: 38px;
-        color: black;
-        font-family: Poppin;
-        transition-duration: 300ms;
-    }
-
-    .like {
-        top: 2px;
-        right: 50px;
-        font-size: 19px;
-        color: rgb(31, 31, 31);
-        transition-duration: 200ms;
-    }
-
-    .comment {
-        top: 2px;
-        right: 20px;
-        font-size: 19px;
-        color: rgb(31, 31, 31);
-        transition-duration: 200ms;
-    }
-
-    .chevR {
-        right: 5px;
-        bottom: calc(30%);
-    }
-
-    .chevR2 {
-        right: 5px;
-        bottom: calc(45%);
-    }
-
-    .chevL {
-        left: 5px;
-        bottom: calc(30%);
-    }
-
-    .chevL2 {
-        left: 5px;
-        bottom: calc(45%);
-    }
 }
 
+.accountName {
+    left: 18px;
+    top: 38px;
+    color: black;
+    font-family: Poppin;
+    transition-duration: 300ms;
+}
+
+.like {
+    top: 2px;
+    right: 50px;
+    font-size: 19px;
+    color: rgb(31, 31, 31);
+    transition-duration: 200ms;
+}
+
+.comment {
+    top: 2px;
+    right: 20px;
+    font-size: 19px;
+    color: rgb(31, 31, 31);
+    transition-duration: 200ms;
+}
+
+.chevR {
+    right: 5px;
+    bottom: 45%;
+}
+
+.bgGr {
+    background-image: linear-gradient(to bottom, #eafffb, #cce3f9, #c7e3f9, #f1dfff);
+    background: linear-gradient(0deg, rgb(255, 255, 255), rgba(255, 0, 0, 0) 40.71%), linear-gradient(315deg, #f1dfff, #f1dfff, #fdefff,#d1ecfc, #bedcf7, rgba(0, 255, 0, 0) 80.71%), linear-gradient(225deg,#eafffb, #dcfff9,#dcfff9, #f1dfff, rgba(0, 0, 255, 0) 70.71%);
+}
+
+.chevL {
+    left: 5px;
+    bottom: 45%;
+}
+
+.chevR2 {
+    right: 5px;
+    bottom: calc(45%);
+}
+
+.chevL2 {
+    left: 5px;
+    bottom: calc(45%);
+}
+
+@media all and (max-width:575px) {}
 
 @media all and (min-width:576px) and (max-width:767px) {}
 
@@ -337,7 +341,11 @@
 
 @media all and (min-width:992px) and (max-width:1199px) {}
 
-@media all and (min-width:1200px) and (max-width:1399px) {}
+@media all and (min-width:1200px) and (max-width:1399px) {
+    .maxHeightpic {
+        max-height: 350px;
+    }
+}
 
 @media all and (min-width:1400px) {}
 
@@ -422,7 +430,7 @@ header {
     background-color: rgba(36, 36, 36, 0.5);
     transition-duration: 150ms;
     font-size: 19px;
-    z-index: 2;
+    z-index: 20;
 }
 
 .chevRI,
@@ -432,9 +440,9 @@ header {
     transition-duration: 150ms;
 }
 
-.chevRA.chevLA {
-    width: 40px;
-    height: 40px;
+.chevRA,
+.chevLA {
+    line-height: 40px;
 }
 
 .shCart:hover {
