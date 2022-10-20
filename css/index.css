@@ -267,21 +267,12 @@
     font-size: 2vw;
 }
 
-.accountPic {
-    width: 61px;
-    height: 61px;
-    position: absolute;
-    border: 3.3px solid white;
-    border-radius: 3px;
-    left: 20px;
-    transition-duration: 350ms;
-    top: -30px;
+.profilePic {
 
 }
 
 .accountName {
-    left: 18px;
-    top: 38px;
+
     color: black;
     font-family: Poppin;
     transition-duration: 300ms;
@@ -303,19 +294,9 @@
     transition-duration: 200ms;
 }
 
-.chevR {
-    right: 5px;
-    bottom: 45%;
-}
 
 .bgGr {
-
-    background: linear-gradient(0deg, rgb(255, 255, 255), rgba(255, 0, 0, 0) 70.71%), linear-gradient(315deg, #f1dfff, #f1dfff, #fdefff, #d1ecfc, #bedcf7, rgba(0, 255, 0, 0) 70.71%), linear-gradient(225deg, #eafffb, #dcfff9, #dcfff9, #f1dfff, rgba(0, 0, 255, 0) 70.71%);
-}
-
-.chevL {
-    left: 5px;
-    bottom: 45%;
+    background: linear-gradient(0deg, rgb(255, 255, 255), rgba(255, 0, 0, 0) 90.71%), linear-gradient(315deg, #f1dfff, #f1dfff, #fdefff, #d1ecfc, #bedcf7, rgba(0, 255, 0, 0) 70.71%), linear-gradient(25deg, #eafffb, #dcfff9, #dcfff9, #f1dfff, rgba(0, 0, 255, 0) 70.71%);
 }
 
 .chevR2 {
@@ -328,19 +309,20 @@
     bottom: calc(45%);
 }
 
-.btnColor{
-    background-image: linear-gradient(to right,rgba(255, 156, 240, 0.1), #00b7ff0b);
+.btnColor {
+    background-image: linear-gradient(to right, rgba(255, 156, 240, 0.1), #00b7ff0b);
     border: 2px solid #d8dadc;
     padding: 10px 12px;
     transition: all 0.2s ease 0s;
 }
 
 .btnColor:hover {
-    box-shadow:0px 2px 10px rgba(0, 0, 0, 0.1);
-    transform: scale(1.05,1.05);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05, 1.05);
 }
 
-.categoriesPic, .categoriesPic1 {
+.categoriesPic,
+.categoriesPic1 {
     max-height: 72px;
 }
 
@@ -364,46 +346,253 @@
 }
 
 .categoriesHover:hover {
-    background-image: linear-gradient(to right,#fff , #f1dfff3a, #dff8ff6e,#fff );
+    background-image: linear-gradient(to right, #fff, #f1dfff3a, #dff8ff6e, #fff);
 }
 
 @media all and (max-width:575px) {
+
+    .chevL,
+    .chevR,
+    .chevR2,
+    .chevL2 {
+        width: 40px;
+        height: 40px;
+        background-color: rgba(36, 36, 36, 0.5);
+        transition-duration: 150ms;
+        font-size: 19px;
+        z-index: 20;
+    }
+
+    .chevRI,
+    .chevLI {
+        font-size: 22px;
+        color: rgba(255, 255, 255, 0.784);
+        transition-duration: 150ms;
+    }
+
+    .profilePic {
+        max-height: 48px;
+        left: 20px;
+        top: -30px;
+        transition-duration: 350ms;
+    }
+
     .line {
         width: 96%;
     }
 }
 
 @media all and (min-width:576px) and (max-width:767px) {
+
+    .chevL,
+    .chevR,
+    .chevR2,
+    .chevL2 {
+        width: 40px;
+        height: 40px;
+        background-color: rgba(36, 36, 36, 0.5);
+        transition-duration: 150ms;
+        font-size: 19px;
+        z-index: 20;
+    }
+
+    .chevRI,
+    .chevLI {
+        font-size: 22px;
+        color: rgba(255, 255, 255, 0.784);
+        transition-duration: 150ms;
+    }
+
+    .chevR {
+        right: 15px;
+        bottom: 45%;
+    }
+
+    .chevL {
+        left: 15px;
+        bottom: 45%;
+    }
+
+    .profilePic {
+        max-height: 48px;
+        left: 20px;
+        top: -30px;
+        transition-duration: 350ms;
+    }
+
     .line {
         width: 96%;
     }
 }
 
 @media all and (min-width:768px) and (max-width:991px) {
-.line {
-    width: 96%;
-}
+
+    .chevL,
+    .chevR,
+    .chevR2,
+    .chevL2 {
+        width: 40px;
+        height: 40px;
+        background-color: rgba(36, 36, 36, 0.5);
+        transition-duration: 150ms;
+        font-size: 19px;
+        z-index: 20;
+    }
+
+    .chevRI,
+    .chevLI {
+        font-size: 22px;
+        color: rgba(255, 255, 255, 0.784);
+        transition-duration: 150ms;
+    }
+
+    .chevR {
+        right: 20px;
+        bottom: 45%;
+    }
+
+    .chevL {
+        left: 20px;
+        bottom: 45%;
+    }
+
+    .profilePic {
+        max-height: 48px;
+        left: 20px;
+        top: -30px;
+        transition-duration: 350ms;
+    }
+
+    .line {
+        width: 96%;
+    }
 }
 
 @media all and (min-width:992px) and (max-width:1199px) {
+
+    .chevL,
+    .chevR,
+    .chevR2,
+    .chevL2 {
+        width: 40px;
+        height: 40px;
+        background-color: rgb(255, 255, 255);
+        transition-duration: 150ms;
+        font-size: 19px;
+        z-index: 20;
+        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.226);
+    }
+
+    .chevRI,
+    .chevLI {
+        font-size: 22px;
+        color: rgba(0, 0, 0, 0.784);
+        transition-duration: 150ms;
+    }
+
+    .chevL {
+        color: #000;
+        left: 26px;
+        bottom: 45%;
+    }
+
+    .chevR {
+        right: 26px;
+        bottom: 45%;
+    }
+
+    .rowP {
+        padding-right: 32px;
+    }
+
+    .profilePic {
+        max-height: 68px;
+        left: 10px;
+        top: -15px;
+        transition-duration: 350ms;
+    }
+
     .line {
         width: 94%;
     }
 }
 
 @media all and (min-width:1200px) and (max-width:1399px) {
+
+    .chevL,
+    .chevR,
+    .chevR2,
+    .chevL2 {
+        width: 40px;
+        height: 40px;
+        background-color: rgb(255, 255, 255);
+        transition-duration: 150ms;
+        font-size: 19px;
+        z-index: 20;
+        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.226);
+    }
+
+    .chevL {
+        left: 26px;
+        bottom: 45%;
+    }
+
+    .chevR {
+        right: 26px;
+        bottom: 45%;
+    }
+
+    .rowP {
+        padding-right: 32px;
+    }
+
+    .profilePic {
+        max-height: 68px;
+    }
+
     .line {
         width: 94%;
     }
 }
 
 @media all and (min-width:1400px) {
+
+    .chevL,
+    .chevR,
+    .chevR2,
+    .chevL2 {
+        width: 40px;
+        height: 40px;
+        background-color: rgb(255, 255, 255);
+        transition-duration: 150ms;
+        font-size: 19px;
+        z-index: 20;
+        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.226);
+    }
+
+    .chevL {
+        left: 26px;
+        bottom: 45%;
+    }
+
+    .chevR {
+        right: 26px;
+        bottom: 45%;
+    }
+
+    .rowP {
+        padding-right: 32px;
+    }
+
+    .profilePic {
+
+        max-height: 68px;
+    }
+
     .line {
         width: 94%;
     }
 }
-
-
 
 .bgColor {
     background-color: #000;
@@ -475,29 +664,11 @@ header {
     height: 40px;
 }
 
-.chevL,
-.chevR,
-.chevR2,
-.chevL2 {
-    width: 40px;
-    height: 40px;
-    background-color: rgba(36, 36, 36, 0.5);
-    transition-duration: 150ms;
-    font-size: 19px;
-    z-index: 20;
-}
 
-.chevRI,
-.chevLI {
-    font-size: 22px;
-    color: rgba(255, 255, 255, 0.784);
-    transition-duration: 150ms;
-}
 
-.chevRA,
-.chevLA {
-    line-height: 40px;
-}
+
+
+
 
 .shCart:hover {
     background-color: whitesmoke;
@@ -509,12 +680,7 @@ header {
 }
 
 .chevR:hover,
-.chevR2:hover {
-    color: black;
-    background-color: whitesmoke;
-    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.4);
-}
-
+.chevR2:hover,
 .chevL:hover,
 .chevL2:hover {
     color: black;
@@ -523,10 +689,7 @@ header {
 }
 
 .chevR:hover .chevRI,
-.chevR2:hover .chevRI {
-    color: black;
-}
-
+.chevR2:hover .chevRI,
 .chevL:hover .chevLI,
 .chevL2:hover .chevLI {
     color: black;
@@ -542,7 +705,7 @@ header {
     transform: scale(1.1);
 }
 
-.accountPic:hover {
+.profilePic:hover {
     transform: scale(1.15);
 }
 
@@ -565,7 +728,7 @@ header {
     left: 10%;
 }
 
-.carousel-item:hover .hoverImg {
+.carouselContainer:hover .hoverImg {
     transform: scale(1.1);
     filter: brightness(75%) blur(0.1px);
 }
@@ -586,10 +749,26 @@ header {
     font-family: VazirB;
 }
 
-.carousel-item:hover .textTransparent {
+.carouselContainer:hover:hover .textTransparent {
     color: white;
 }
 
 .carouselContainer:hover .textTransparent {
     color: white;
+}
+
+.card-body {
+    background-image: linear-gradient(to right, #f1dfff8d, #dff8ffb4);
+}
+
+.cardHover:hover .cardImg {
+    transform: scale(1.1, 1.1);
+}
+
+.cardImg {
+    transition: all 0.4s ease;
+}
+
+.information {
+    height: 80px;
 }
