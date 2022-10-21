@@ -25,13 +25,19 @@
     font-display: swap;
 }
 
+
+
+.bgNav {
+    background-image: linear-gradient(to left, rgba(255, 156, 240, 0.196), #00b7ff24);
+}
+
 .logoHeight {
-    height: 66px;
+    line-height: 66px;
 }
 
 .fontNav {
     font-family: VazirB;
-    line-height: 56px;
+    line-height: 66px;
 }
 
 .navIcon {
@@ -39,6 +45,11 @@
     height: 40px;
     line-height: 40px;
     text-align: center;
+    transition: all 0.3s ease;
+}
+
+.navIcon:hover {
+    transform: scale(1.2, 1.2);
 }
 
 .VazirFont {
@@ -46,8 +57,22 @@
     font-size: 14px;
 }
 
-.offcanvasEdit {
-    top: 500px;
+.navHover1 {
+    line-height: 79.2px;
+    transition: all 0.3s ease;
+}
+
+.navHover1:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.s {
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.navHover:hover .s {
+    border-bottom: 2px solid #2081e2;
 }
 
 .listHeight {
@@ -59,6 +84,7 @@
     height: 40px;
     border: 2px solid rgb(229, 232, 235);
     border-radius: 8px;
+    transition: all 0.3s ease;
 }
 
 .borderAndShadowSearchBox:hover {
@@ -80,8 +106,11 @@
     right: 10%;
 }
 
-.bgimg {
-    opacity: 0.7;
+.text-shadowHd {
+    text-shadow: 0px 2px 5px black;
+}
+.text-shadowHd1 {
+    text-shadow: 0px 2px 4px black;
 }
 
 .VazirLIF {
@@ -228,7 +257,7 @@
 
 .color-9 {
     background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
-    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.705);
+    box-shadow: 0 2px 7px 0 rgb(40, 40, 40);
 }
 
 .btn-hover:hover {
@@ -242,8 +271,7 @@
 }
 
 .BgBtn1 {
-    background-color: #167ec4;
-    border-left: 2px solid #04befe;
+    background-color: #4085ec;
 }
 
 .BgBtn2 {
@@ -252,7 +280,7 @@
 }
 
 .BgBtn2:hover {
-    background-color: #167ec4;
+    background-color: #4085ec;
 }
 
 .clseBtn {
@@ -267,9 +295,7 @@
     font-size: 2vw;
 }
 
-.profilePic {
-
-}
+.profilePic {}
 
 .accountName {
 
@@ -293,7 +319,6 @@
     color: rgb(31, 31, 31);
     transition-duration: 200ms;
 }
-
 
 .bgGr {
     background: linear-gradient(0deg, rgb(255, 255, 255), rgba(255, 0, 0, 0) 90.71%), linear-gradient(315deg, #f1dfff, #f1dfff, #fdefff, #d1ecfc, #bedcf7, rgba(0, 255, 0, 0) 70.71%), linear-gradient(25deg, #eafffb, #dcfff9, #dcfff9, #f1dfff, rgba(0, 0, 255, 0) 70.71%);
@@ -331,14 +356,18 @@
 }
 
 .numbers {
-    padding-left: 37px;
+    left:3.5%;
+    top: 45%;
     color: #818a92;
     font-family: VazirB;
     font-size: 14px;
+    z-index:30;
 }
 
 .categoriesTitle {
     font-family: VazirB;
+    left: 5%;
+    top: 45%;
 }
 
 .categoriesHover {
@@ -349,7 +378,297 @@
     background-image: linear-gradient(to right, #fff, #f1dfff3a, #dff8ff6e, #fff);
 }
 
+.fTitle {
+    font-family: VazirB;
+    font-size: 4vw;
+    color: #ebedef;
+    text-shadow: 0px 3px 0px #bdbfc1a1;
+}
+
+.fText {
+    font-family: Vazir;
+    font-size: 1.5vw;
+    color: #bdbfc1;
+}
+
+.fTitlePos {
+    top: 28%;
+}
+
+.fTextPos {
+    top: 51%;
+}
+
+.btnPos {
+    top: 64%;
+    text-align: center;
+}
+
+header {
+    background-image: url(../images/bgm1.jpg);
+    background-size: cover;
+    background-position: 100% 100%;
+}
+
+.VazirBFont {
+    font-family: VazirB;
+}
+
+.VazirFontM {
+    font-family: Vazir;
+}
+
+.T {
+    font-family: VazirB;
+}
+
+.shCart {
+    width: 40px;
+    height: 40px;
+    top: 5px;
+    right: 5px;
+    font-size: 19px;
+    background-color: rgba(73, 73, 73, 0.3);
+    box-shadow: 0px 0px 4px 2px rgba(167, 167, 167, 0.4);
+    transition-duration: 150ms;
+    z-index: 1;
+}
+
+.shCartI {
+    margin: 12px 11px;
+    color: white;
+    transition-duration: 150ms;
+}
+
+.shCartA {
+    width: 40px;
+    height: 40px;
+}
+
+.shCart:hover {
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.4);
+}
+
+.shCart:hover .shCartI {
+    color: rgba(34, 92, 0, 0.952);
+}
+
+.chevR:hover,
+.chevR2:hover,
+.chevL:hover,
+.chevL2:hover {
+    color: black;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.4);
+}
+
+.chevR:hover .chevRI,
+.chevR2:hover .chevRI,
+.chevL:hover .chevLI,
+.chevL2:hover .chevLI {
+    color: black;
+}
+
+.like:hover {
+    color: #ea4855;
+    transform: scale(1.1);
+}
+
+.comment:hover {
+    color: #737373;
+    transform: scale(1.1);
+}
+
+.profilePic:hover {
+    transform: scale(1.15);
+}
+
+.accountName:hover {
+    transform: scale(1.07);
+    color: rgb(0, 0, 158);
+}
+
+.photoFlow {
+    overflow: hidden;
+}
+
+.hoverImg {
+    transition-duration: 800ms;
+    z-index: -1;
+}
+
+.textHover1 {
+    top: 10%;
+    left: 10%;
+}
+
+.carouselContainer:hover .hoverImg {
+    transform: scale(1.1);
+    filter: brightness(75%) blur(0.1px);
+}
+
+.carouselContainer:hover .hoverImg {
+    transform: scale(1.1);
+    filter: brightness(75%) blur(0.1px);
+}
+
+.textTransparent {
+    color: transparent;
+    font-family: VazirB;
+}
+
+.carouselContainer:hover:hover .textTransparent {
+    color: white;
+}
+
+.carouselContainer:hover .textTransparent {
+    color: white;
+}
+
+.card-body {
+    background-image: linear-gradient(to right, #f1dfff8d, #dff8ffb4);
+}
+
+.cardHover:hover .cardImg {
+    transform: scale(1.1, 1.1);
+}
+
+.cardImg {
+    transition: all 0.4s ease;
+}
+
+
+.accountPic:hover {
+    transform: scale(1.15);
+}
+
+.dadH:hover .hoverImg {
+    transform: scale(1.15);
+}
+
+.bgPgF {
+    background-color: #ff2424a9;
+    cursor: not-allowed;
+    pointer-events: all !important;
+}
+.bgPg1 {
+    background-color: #1868b7;
+}
+
+.bgPgL {
+    background-color: #086400aa;
+}
+
+.bgPgF:hover {
+    background-color: #ff2424a9;
+}
+
+.bgPg1:hover {
+    background-color: #1868b7;
+}
+
+.bgPgL:hover {
+    background-color: #086400ea;
+}
+
+.FtBgColor {
+    background-color: #1868b7;
+}
+
+.IBg {
+    background-color: #2081e2;
+    transition: all 0.2s ease 0s;
+    width: 48px;
+    height: 48px;
+}
+
+.IBg:hover {
+    background-color: #238ef9;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.IClr {
+    color: #1868b7;
+}
+
+.FtVazirB {
+    font-family: VAzirB;
+    font-size: 22px;
+}
+
+.FtVazir {
+    font-family: Vazir;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.UlVazirH {
+    font-family: VazirB;
+    font-size: 16px;
+}
+
+.FtLineW {
+    width: 94%;
+}
+
+.nav-link {
+    transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+    transform: scale(1.02);
+}
+
 @media all and (max-width:575px) {
+    .navLI1 {
+        border-top: 2px solid rgba(32, 32, 32, 0.608);
+    }
+
+    .navHover {
+        line-height: 49.2px; 
+    }
+
+    .accountPic {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        border: 2px solid white;
+        border-radius: 3px;
+        left: 20px;
+        transition-duration: 350ms;
+        top: -30px;
+    }
+
+    .accountName {
+        left: 18px;
+        top: 26px;
+        color: black;
+        font-family: Poppin;
+        font-size: 18px;
+        transition-duration: 300ms;
+    }
+
+    .information {
+        height: 65px;
+        background-image: linear-gradient(to right, #ddb7fb68, #c6effba1);
+    }
+
+    .like {
+        top: 2px;
+        right: 60px;
+        font-size: 17px;
+        color: rgb(31, 31, 31);
+        transition-duration: 200ms;
+    }
+
+    .comment {
+        top: 2px;
+        right: 10px;
+        font-size: 17px;
+        color: rgb(31, 31, 31);
+        transition-duration: 200ms;
+    }
 
     .chevL,
     .chevR,
@@ -383,6 +702,54 @@
 }
 
 @media all and (min-width:576px) and (max-width:767px) {
+    .navLI1 {
+        border-top: 2px solid rgba(179, 179, 179, 0.501);
+    }
+
+    .navHover {
+    line-height: 49.2px; 
+}
+
+    .accountPic {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        border: 2px solid white;
+        border-radius: 3px;
+        left: 20px;
+        transition-duration: 350ms;
+        top: -30px;
+    }
+
+    .accountName {
+        left: 18px;
+        top: 26px;
+        color: black;
+        font-family: Poppin;
+        font-size: 18px;
+        transition-duration: 300ms;
+    }
+
+    .information {
+        height: 65px;
+        background-image: linear-gradient(to right, #ddb7fb68, #c6effba1);
+    }
+
+    .like {
+        top: 2px;
+        right: 60px;
+        font-size: 17px;
+        color: rgb(31, 31, 31);
+        transition-duration: 200ms;
+    }
+
+    .comment {
+        top: 2px;
+        right: 10px;
+        font-size: 17px;
+        color: rgb(31, 31, 31);
+        transition-duration: 200ms;
+    }
 
     .chevL,
     .chevR,
@@ -426,6 +793,54 @@
 }
 
 @media all and (min-width:768px) and (max-width:991px) {
+    .navLI1 {
+        border-top: 2px solid rgba(32, 32, 32, 0.608);
+    }
+
+    .navHover {
+    line-height: 49.2px; 
+}
+
+    .accountPic {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        border: 2px solid white;
+        border-radius: 3px;
+        left: 20px;
+        transition-duration: 350ms;
+        top: -30px;
+    }
+
+    .accountName {
+        left: 18px;
+        top: 26px;
+        color: black;
+        font-family: Poppin;
+        font-size: 18px;
+        transition-duration: 300ms;
+    }
+
+    .information {
+        height: 65px;
+        background-image: linear-gradient(to right, #ddb7fb68, #c6effba1);
+    }
+
+    .like {
+        top: 2px;
+        right: 60px;
+        font-size: 17px;
+        color: rgb(31, 31, 31);
+        transition-duration: 200ms;
+    }
+
+    .comment {
+        top: 2px;
+        right: 10px;
+        font-size: 17px;
+        color: rgb(31, 31, 31);
+        transition-duration: 200ms;
+    }
 
     .chevL,
     .chevR,
@@ -469,6 +884,50 @@
 }
 
 @media all and (min-width:992px) and (max-width:1199px) {
+    .navHover {
+        line-height: 79.2px;
+    }
+
+    .accountPic {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        border: 2px solid white;
+        border-radius: 3px;
+        left: 20px;
+        transition-duration: 350ms;
+        top: -30px;
+    }
+
+    .accountName {
+        left: 18px;
+        top: 26px;
+        color: black;
+        font-family: Poppin;
+        font-size: 18px;
+        transition-duration: 300ms;
+    }
+
+    .information {
+        height: 65px;
+        background-image: linear-gradient(to right, #ddb7fb68, #c6effba1);
+    }
+
+    .like {
+        top: 2px;
+        right: 60px;
+        font-size: 17px;
+        color: rgb(31, 31, 31);
+        transition-duration: 200ms;
+    }
+
+    .comment {
+        top: 2px;
+        right: 10px;
+        font-size: 17px;
+        color: rgb(31, 31, 31);
+        transition-duration: 200ms;
+    }
 
     .chevL,
     .chevR,
@@ -518,6 +977,50 @@
 }
 
 @media all and (min-width:1200px) and (max-width:1399px) {
+    .navHover {
+        line-height: 79.2px;
+    }
+
+    .accountPic {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        border: 2px solid white;
+        border-radius: 3px;
+        left: 20px;
+        transition-duration: 350ms;
+        top: -30px;
+    }
+
+    .accountName {
+        left: 18px;
+        top: 26px;
+        color: black;
+        font-family: Poppin;
+        font-size: 18px;
+        transition-duration: 300ms;
+    }
+
+    .information {
+        height: 65px;
+        background-image: linear-gradient(to right, #ddb7fb68, #c6effba1);
+    }
+
+    .like {
+        top: 2px;
+        right: 60px;
+        font-size: 17px;
+        color: rgb(31, 31, 31);
+        transition-duration: 200ms;
+    }
+
+    .comment {
+        top: 2px;
+        right: 10px;
+        font-size: 17px;
+        color: rgb(31, 31, 31);
+        transition-duration: 200ms;
+    }
 
     .chevL,
     .chevR,
@@ -556,6 +1059,50 @@
 }
 
 @media all and (min-width:1400px) {
+    .navHover {
+        line-height: 79.2px;
+    }
+
+    .accountPic {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        border: 2px solid white;
+        border-radius: 3px;
+        left: 20px;
+        transition-duration: 350ms;
+        top: -30px;
+    }
+
+    .accountName {
+        left: 18px;
+        top: 26px;
+        color: black;
+        font-family: Poppin;
+        font-size: 18px;
+        transition-duration: 300ms;
+    }
+
+    .information {
+        height: 65px;
+        background-image: linear-gradient(to right, #ddb7fb68, #c6effba1);
+    }
+
+    .like {
+        top: 2px;
+        right: 60px;
+        font-size: 17px;
+        color: rgb(31, 31, 31);
+        transition-duration: 200ms;
+    }
+
+    .comment {
+        top: 2px;
+        right: 10px;
+        font-size: 17px;
+        color: rgb(31, 31, 31);
+        transition-duration: 200ms;
+    }
 
     .chevL,
     .chevR,
@@ -592,183 +1139,4 @@
     .line {
         width: 94%;
     }
-}
-
-.bgColor {
-    background-color: #000;
-}
-
-.fTitle {
-    font-family: VazirB;
-    font-size: 4vw;
-    color: #ebedef;
-    text-shadow: 0px 3px 0px #bdbfc1a1;
-}
-
-.fText {
-    font-family: Vazir;
-    font-size: 1.5vw;
-    color: #bdbfc1;
-}
-
-.fTitlePos {
-    top: 28%;
-}
-
-.fTextPos {
-    top: 51%;
-}
-
-.btnPos {
-    top: 64%;
-    text-align: center;
-}
-
-header {
-    background-image: url(../images/BGM.jpg);
-    background-size: cover;
-}
-
-.VazirBFont {
-    font-family: VazirB;
-}
-
-.VazirFontM {
-    font-family: Vazir;
-}
-
-.T {
-    font-family: VazirB;
-}
-
-.shCart {
-    width: 40px;
-    height: 40px;
-    top: 5px;
-    right: 5px;
-    font-size: 19px;
-    background-color: rgba(73, 73, 73, 0.3);
-    box-shadow: 0px 0px 4px 2px rgba(167, 167, 167, 0.4);
-    transition-duration: 150ms;
-    z-index: 1;
-}
-
-.shCartI {
-    margin: 12px 11px;
-    color: white;
-    transition-duration: 150ms;
-}
-
-.shCartA {
-    width: 40px;
-    height: 40px;
-}
-
-
-
-
-
-
-
-.shCart:hover {
-    background-color: whitesmoke;
-    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.4);
-}
-
-.shCart:hover .shCartI {
-    color: rgba(34, 92, 0, 0.952);
-}
-
-.chevR:hover,
-.chevR2:hover,
-.chevL:hover,
-.chevL2:hover {
-    color: black;
-    background-color: whitesmoke;
-    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.4);
-}
-
-.chevR:hover .chevRI,
-.chevR2:hover .chevRI,
-.chevL:hover .chevLI,
-.chevL2:hover .chevLI {
-    color: black;
-}
-
-.like:hover {
-    color: #ea4855;
-    transform: scale(1.1);
-}
-
-.comment:hover {
-    color: #737373;
-    transform: scale(1.1);
-}
-
-.profilePic:hover {
-    transform: scale(1.15);
-}
-
-.accountName:hover {
-    transform: scale(1.12);
-    color: rgb(0, 0, 158);
-}
-
-.photoFlow {
-    overflow: hidden;
-}
-
-.hoverImg {
-    transition-duration: 800ms;
-    z-index: -1;
-}
-
-.textHover1 {
-    top: 10%;
-    left: 10%;
-}
-
-.carouselContainer:hover .hoverImg {
-    transform: scale(1.1);
-    filter: brightness(75%) blur(0.1px);
-}
-
-.carouselContainer:hover .hoverImg {
-    transform: scale(1.1);
-    filter: brightness(75%) blur(0.1px);
-}
-
-.photoFlow::after {
-    width: 100px;
-    height: 4px;
-    color: blue;
-}
-
-.textTransparent {
-    color: transparent;
-    font-family: VazirB;
-}
-
-.carouselContainer:hover:hover .textTransparent {
-    color: white;
-}
-
-.carouselContainer:hover .textTransparent {
-    color: white;
-}
-
-.card-body {
-    background-image: linear-gradient(to right, #f1dfff8d, #dff8ffb4);
-}
-
-.cardHover:hover .cardImg {
-    transform: scale(1.1, 1.1);
-}
-
-.cardImg {
-    transition: all 0.4s ease;
-}
-
-.information {
-    height: 80px;
 }

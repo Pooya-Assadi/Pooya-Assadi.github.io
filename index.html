@@ -16,17 +16,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 
-<body style="height: 2000px;">
-    <nav class="navbar navbar-expand-lg bg-white py-0 border-bottom ">
+<body>
+    <nav class="navbar bgNav navbar-expand-lg py-0 border-bottom ">
         <div class="container-fluid d-flex ">
-            <div class="logoHeight me-4"><a class="navbar-brand d-block h-100 ms-5" href="#">
-                    <img src="images/logo.jpg" alt="Logo" width="40" height="40" class="d-inline-block">
+            <div class="logoHeight "><a class="navbar-brand d-block h-100 ms-5" href="#">
+                    <img src="images/logo.png" alt="Logo" width="40" height="40" class="d-inline-block">
                     <span class="fontNav">لنز</span>
                 </a></div>
-            <div class="searchWidth flex-grow-1">
-                <form class="d-none d-sm-flex ms-3 searchBox w-100" role="search">
-                    <input class="me-2 w-100 borderAndShadowSearchBox" type="search" placeholder="Search"
-                        aria-label="Search">
+            <div class="flex-grow-1">
+                <form class="d-none d-sm-flex ms-3 searchBox w-100 " role="search">
+                    <input class="me-2 w-100 borderAndShadowSearchBox px-3" type="search"
+                        placeholder="جست و جوی عکس ،  دسته بندی و حساب کاربری " aria-label="Search">
                 </form>
             </div>
             <div class="d-flex">
@@ -41,47 +41,41 @@
                 </button>
             </div>
 
-            <div class="collapse navbar-collapse flex-grow-0 me-lg-5 " id="navbarSupportedContent" dir="ltr">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-lg-row-reverse">
-                    <li class="nav-item ms-lg-2 mt-lg-1">
-                        <a class="nav-link active VazirFont" aria-current="page" href="#">صفحه اصلی</a>
+
+            <div class="collapse navbar-collapse flex-grow-0 me-lg-5" id="navbarSupportedContent" dir="ltr">
+                <ul class="navbar-nav  d-flex flex-lg-row-reverse">
+                    <li class="nav-item navLI1 m-0">
+                        <a href="#" class="navHover nav-link active VazirFont py-0" aria-current="page" href="#"><span
+                                class="s">صفحه اصلی</span></a>
                     </li>
-                    <li class="nav-item ms-lg-2 mt-lg-1 dropdown" dir="rtl">
-                        <a class="nav-link dropdown-toggle VazirFont" dir="rtl" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            دسته بندی ها
+                    <li class="nav-item m-0 dropdown navLI" dir="rtl">
+                        <a href="#" class=" py-0 navHover nav-link dropdown-toggle VazirFont" dir="rtl" href="#"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="s">گالری تصاویر</span>
                         </a>
-                        <ul class="dropdown-menu" dir="rtl">
-                            <li dir="rtl"><a class="dropdown-item" href="#">Action</a></li>
-                            <li dir="rtl"><a class="dropdown-item" href="#">Another action</a></li>
-                            <li dir="rtl">
-                                <hr class="dropdown-divider">
+
+                        <ul class="dropdown-menu py-0 mb-3 overflow-hidden" dir="rtl">
+                            <li dir="rtl"><a class="dropdown-item VazirFont border-bottom" href="#">دسته بندی ها</a>
                             </li>
-                            <li dir="rtl"><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li dir="rtl"><a class="dropdown-item VazirFont border-bottom" href="#">بهترین ها</a></li>
+                            <li dir="rtl"><a class="dropdown-item VazirFont border-bottom" href="#">جدیدترین ها</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item ms-lg-2 mt-lg-1">
-                        <a class="nav-link VazirFont">خدمات</a>
+                    <li class="nav-item m-0 navLI">
+                        <a href="#" class="py-0 navHover nav-link VazirFont"><span class="s">خدمات</span></a>
+
                     </li>
-                    <li class="nav-item ms-lg-2 mt-lg-1">
-                        <a class="nav-link VazirFont" href="#">درباره ما</a>
+                    <li class="nav-item m-0 navLI">
+                        <a href="#" class="py-0 navHover nav-link VazirFont" href="#"><span class="s">درباره
+                                ما</span></a>
                     </li>
+                    <li class="nav-item m-0 navLI">
+                        <a href="#" class="py-0 navHover nav-link VazirFont" href="#"><span class="s">تماس با
+                                ما</span></a>
                     </li>
-                    <a class="nav-link VazirFont ms-lg-2 mt-lg-1" href="#">تماس با ما</a>
-                    </li>
-                    <li class="nav-item ms-lg-2 mt-lg-1 dropdown" dir="rtl">
-                        <a class="nav-link dropdown-toggle VazirFont fs-5" dir="rtl" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fa-solid fa-circle-user"></i>
-                        </a>
-                        <ul class="dropdown-menu" dir="rtl">
-                            <li dir="rtl"><a class="dropdown-item" href="#">Action</a></li>
-                            <li dir="rtl"><a class="dropdown-item" href="#">Another action</a></li>
-                            <li dir="rtl">
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li dir="rtl"><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                    <li class="nav-item m-0 navLI">
+                        <a href="#" class="py-0 navHover1 nav-link d-none d-lg-block"><i
+                                class="fa-solid fa-circle-user h3 text-dark fs-4"></i></a>
                     </li>
                 </ul>
             </div>
@@ -93,10 +87,12 @@
             <div class="row align-items-center justify-content-center py-2">
                 <div class="col-lg-8 col-xl-7 col-xxl-6 py-3">
                     <div class="my-5 text-center text-xl-start py-0">
-                        <h1 class="display-5 fw-bolder text-white mb-2 text-center VazirBFont">عکاسی هنر مشاهده <br> و
+                        <h1 class="display-5 text-shadowHd fw-bolder text-white mb-2 text-center VazirBFont">عکاسی هنر
+                            مشاهده <br> و
                             احساس است</h1>
-                        <p class="lead fw-normal text-white mb-4 text-center VazirFontM">هنر خود را از طریق ما با دیگران
-                            به اشتراک گذاشته <br> و با هم از آن لإت ببرید!</p>
+                        <p class="lead fw-normal text-shadowHd1 text-white mb-4 text-center VazirFontM">هنر خود را از
+                            طریق ما،با دیگران
+                            به اشتراک گذاشته <br> و با هم از آن لذت ببرید!</p>
                         <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-center">
                             <button type="button" class="btn btn-hover color-9" data-bs-toggle="modal"
                                 data-bs-target="#exampleModal">
@@ -107,7 +103,7 @@
                             aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content mdl">
-                                    <div class="modal-header py-0 px-0 overflow-hidden shdw">
+                                    <div class="modal-header py-0 px-0 overflow-hidden">
 
                                         <div class="w-50 h-100 VazirLIF BgBtn1 text-center"><a href="#"
                                                 class="d-block w-100 h-100 text-decoration-none text-white py-3">ورود</a>
@@ -128,8 +124,8 @@
                                                             <form class="form-horizontal">
                                                                 <div class="form-group">
                                                                     <label for="exampleInputText1"
-                                                                        class="form-label text-dark w-100 text-end">نام
-                                                                        کاربری/ایمیل</label>
+                                                                        class="form-label text-dark w-100 text-end"><small>نام
+                                                                            کاربری / ایمیل</small></label>
                                                                     <input type="text"
                                                                         class="form-control rounded-5 mb-4"
                                                                         id="exampleInputText1"
@@ -137,8 +133,8 @@
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <label for="exampleInputPassword1"
-                                                                        class="form-label text-dark w-100 text-end">رمز
-                                                                        عبور</label>
+                                                                        class="form-label text-dark w-100 text-end"><small>رمز
+                                                                            عبور</small></label>
                                                                     <input type="password"
                                                                         class="form-control rounded-5"
                                                                         id="exampleInputPassword1"
@@ -149,10 +145,11 @@
                                                                     <input type="checkbox" class="form-check-input ms-1"
                                                                         id="exampleCheck1">
                                                                     <label class="form-check-label text-dark"
-                                                                        for="exampleCheck1">مرا به خاطر بسپار</label>
+                                                                        for="exampleCheck1 fs-6"><small>مرا به خاطر
+                                                                            بسپار</small></label>
                                                                     <a href="#"
-                                                                        class="d-block me-auto text-decoration-none">فراموشی
-                                                                        رمز عبور؟</a>
+                                                                        class="d-block me-auto text-decoration-none fs-6">
+                                                                        <small>فراموشی رمز عبور؟</small></a>
                                                                 </div>
                                                                 <div
                                                                     class="w-100 position-relative d-flex rounded h-100 btnContainer pb-3">
@@ -164,7 +161,7 @@
 
                                                                 <hr class="w-50 mx-auto text-dark hrM p-0 pb-3 ">
 
-                                                                <h3 class="title text-center mb-4 ">ورود با:</h3>
+                                                                <h3 class="title text-center mb-4 fs-6">ورود با:</h3>
                                                                 <ul
                                                                     class="social-links p-0 text-center list-unstyled d-flex justify-content-center">
                                                                     <li class="mx-1 FL1"><a href="#"
@@ -193,11 +190,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5"
-                        src="images/bg3.jpg" alt="..." /></div>
             </div>
         </div>
     </header>
+
+
+
+
+
 
     <div class="container-fluid bgGr pt-3 pb-5 d-sm-none">
         <div class="row">
@@ -224,61 +224,61 @@
                             aria-label="Slide 8"></button>
                     </div>
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="images/1-1.jpg" class="d-block w-100 rounded-4 hoverImg" alt="...">
+                        <div class="carousel-item carouselContainer active"><a href="#">
+                                <img src="images/1-1.jpg" class="d-block w-100 rounded-4 hoverImg"></a>
                             <div class="w-100 h-100 d-flex flex-column align-items-center">
                                 <p class="textTransparent position-absolute textHover1 fs-5 h6 text-center">پویا اسدی
                                     <br> 9.9K
                                 </p><br><br>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="images/1-2.jpg" class="d-block w-100 rounded-4 hoverImg" alt="...">
+                        <div class="carousel-item carouselContainer"><a href="#">
+                                <img src="images/1-2.jpg" class="d-block w-100 rounded-4 hoverImg"></a>
                             <div class="w-100 h-100 d-flex flex-column align-items-center">
                                 <p class="textTransparent position-absolute textHover1 fs-5 h6 text-center">عرفان ایرانی
                                     <br> 6.9K
                                 </p><br><br>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="images/1-3.jpg" class="d-block w-100 rounded-4 hoverImg" alt="...">
+                        <div class="carousel-item carouselContainer"><a href="#">
+                                <img src="images/1-3.jpg" class="d-block w-100 rounded-4 hoverImg"></a>
                             <div class="w-100 h-100 d-flex flex-column align-items-center">
                                 <p class="textTransparent position-absolute textHover1 fs-5 h6 text-center">علی کریمی
                                     <br> 6.6K
                                 </p><br><br>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="images/1-4.jpg" class="d-block w-100 rounded-4 hoverImg" alt="...">
+                        <div class="carousel-item carouselContainer"><a href="#">
+                                <img src="images/1-4.jpg" class="d-block w-100 rounded-4 hoverImg"></a>
                             <div class="w-100 h-100 d-flex flex-column align-items-center">
                                 <p class="textTransparent position-absolute textHover1 fs-5 h6 text-center">علی دایی
                                     <br> 6K
                                 </p><br><br>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="images/1-5.jpg" class="d-block w-100 rounded-4 hoverImg" alt="...">
+                        <div class="carousel-item carouselContainer"><a href="#">
+                                <img src="images/1-5.jpg" class="d-block w-100 rounded-4 hoverImg"></a>
                             <div class="w-100 h-100 d-flex flex-column align-items-center">
                                 <p class="textTransparent position-absolute textHover1 fs-5 h6 text-center">بردپیت<br>
                                     3.9K</p><br><br>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="images/1-6.jpg" class="d-block w-100 rounded-4 hoverImg" alt="...">
+                        <div class="carousel-item carouselContainer"><a href="#">
+                                <img src="images/1-6.jpg" class="d-block w-100 rounded-4 hoverImg"></a>
                             <div class="w-100 h-100 d-flex flex-column align-items-center">
                                 <p class="textTransparent position-absolute textHover1 fs-5 h6 text-center">جانی دپ<br>
                                     3.6K</p><br><br>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="images/1-7.jpg" class="d-block w-100 rounded-4 hoverImg" alt="...">
+                        <div class="carousel-item carouselContainer"><a href="#">
+                                <img src="images/1-7.jpg" class="d-block w-100 rounded-4 hoverImg"></a>
                             <div class="w-100 h-100 d-flex flex-column align-items-center">
                                 <p class="textTransparent position-absolute textHover1 fs-5 h6 text-center">
                                     آلپاچینو<br> 3.3K</p><br><br>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="images/1-8.jpg" class="d-block w-100 rounded-4 hoverImg" alt="...">
+                        <div class="carousel-item carouselContainer"><a href="#">
+                                <img src="images/1-8.jpg" class="d-block w-100 rounded-4 hoverImg"></a>
                             <div class="w-100 h-100 d-flex flex-column align-items-center">
                                 <p class="textTransparent position-absolute textHover1 fs-5 h6 text-center">اسنوپ
                                     داگ<br> 3K</p><br><br>
@@ -297,68 +297,8 @@
                     </button>
                 </div>
             </div>
-            <div class="col-12 d-none d-sm-block">
-                <div class="row ps-lg-5 pe-lg-4" dir="ltr">
-                    <div class="col-sm-6 pe-sm-1 col-md-4 pe-md-0 ps-md-3 col-lg-3 ps-lg-0 pe-lg-3">
-                        <div class="carouselContainer overflow-hidden rounded-4 position-relative">
-                            <div class="chevL position-absolute rounded-circle"><a href="#"
-                                    class="d-block chevLA rounded-circle w-100 h-100 text-center"><i
-                                        class="fa-solid fa-chevron-left chevLI"></i></a></div>
-                            <img src="images/1-1.jpg" class="w-100 rounded-4 hoverImg">
-                            <div class="w-100 h-100 d-flex flex-column align-items-center">
-                                <p class="textTransparent position-absolute textHover1 fs-5 h6 text-center">پویا اسدی
-                                    <br> 9.9K
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 ps-sm-1 col-md-4 px-md-2 col-lg-3 ps-lg-0 pe-lg-3">
-                        <div class="carouselContainer overflow-hidden rounded-4 position-relative">
-                            <div class="chevR d-md-none position-absolute rounded-circle align-self-center"><a href="#"
-                                    class="d-block chevRA rounded-circle w-100 h-100 text-center"><i
-                                        class="fa-solid fa-chevron-right chevRI"></i></a></div>
-                            <img src="images/1-2.jpg" class="w-100 rounded-4 hoverImg">
-                            <div class="w-100 h-100 d-flex flex-column align-items-center">
-                                <p class="textTransparent position-absolute textHover1 fs-5 h6 text-center">پویا اسدی
-                                    <br> 9.9K
-                                </p><br><br>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-none d-md-block col-md-4 px-0 pe-md-3 col-lg-3 ps-lg-0 pe-lg-3">
-                        <div class="carouselContainer overflow-hidden rounded-4 position-relative">
-                            <div class="chevR d-lg-none position-absolute rounded-circle align-self-center"><a href="#"
-                                    class="d-block chevRA rounded-circle w-100 h-100 text-center"><i
-                                        class="fa-solid fa-chevron-right chevRI"></i></a></div>
-                            <img src="images/1-3.jpg" class="w-100 rounded-4 hoverImg">
-                            <div class="w-100 h-100 d-flex flex-column align-items-center">
-                                <p class="textTransparent position-absolute textHover1 fs-5 h6 text-center">پویا اسدی
-                                    <br> 9.9K
-                                </p><br><br>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-none d-lg-block col-lg-3 ps-0 pe-3">
-                        <div class="carouselContainer overflow-hidden rounded-4 position-relative">
-                            <div class="chevR position-absolute rounded-circle align-self-center"><a href="#"
-                                    class="d-block chevRA rounded-circle w-100 h-100 text-center"><i
-                                        class="fa-solid fa-chevron-right chevRI"></i></a></div>
-                            <img src="images/1-4.jpg" class="w-100 rounded-4 hoverImg">
-                            <div class="w-100 h-100 d-flex flex-column align-items-center">
-                                <p class="textTransparent position-absolute textHover1 fs-5 h6 text-center">پویا اسدی
-                                    <br> 9.9K
-                                </p><br><br>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
-
-
-
-
 
     <div id="carouselExampleControls" class="carousel carousel-dark slide d-none d-sm-block bgGr"
         data-bs-ride="carousel">
@@ -384,9 +324,9 @@
                             <div class="carouselContainer shadow-sm overflow-hidden rounded-4 position-relative">
                                 <img src="images/1-2.jpg" class="w-100 rounded-4 hoverImg">
                                 <div class="w-100 h-100 d-flex flex-column align-items-center">
-                                    <p class="textTransparent position-absolute textHover1 fs-5 h6 text-center">پویا
-                                        اسدی
-                                        <br> 9.9K
+                                    <p class="textTransparent position-absolute textHover1 fs-5 h6 text-center">عرفان
+                                        ایرانی
+                                        <br> 6.9K
                                     </p><br><br>
                                 </div>
                             </div>
@@ -397,9 +337,9 @@
                             <div class="carouselContainer shadow-sm overflow-hidden rounded-4 position-relative">
                                 <img src="images/1-3.jpg" class="w-100 rounded-4 hoverImg">
                                 <div class="w-100 h-100 d-flex flex-column align-items-center">
-                                    <p class="textTransparent position-absolute textHover1 fs-5 h6 text-center">پویا
-                                        اسدی
-                                        <br> 9.9K
+                                    <p class="textTransparent position-absolute textHover1 fs-5 h6 text-center">علی
+                                        کریمی
+                                        <br> 6.6K
                                     </p><br><br>
                                 </div>
                             </div>
@@ -409,9 +349,9 @@
                             <div class="carouselContainer shadow-sm overflow-hidden rounded-4 position-relative">
                                 <img src="images/1-4.jpg" class="w-100 rounded-4 hoverImg">
                                 <div class="w-100 h-100 d-flex flex-column align-items-center">
-                                    <p class="textTransparent position-absolute textHover1 fs-5 h6 text-center">پویا
-                                        اسدی
-                                        <br> 9.9K
+                                    <p class="textTransparent position-absolute textHover1 fs-5 h6 text-center">علی
+                                        دایی
+                                        <br> 6.3K
                                     </p><br><br>
                                 </div>
                             </div>
@@ -431,9 +371,9 @@
                             <div class="carouselContainer shadow-sm overflow-hidden rounded-4 position-relative">
                                 <img src="images/1-5.jpg" class="w-100 rounded-4 hoverImg">
                                 <div class="w-100 h-100 d-flex flex-column align-items-center">
-                                    <p class="textTransparent position-absolute textHover1 fs-5 h6 text-center">پویا
+                                    <p class="textTransparent position-absolute textHover1 fs-5 h6 text-center">برد پیت
                                         اسدی
-                                        <br> 9.9K
+                                        <br> 6K
                                     </p>
                                 </div>
                             </div>
@@ -443,9 +383,9 @@
                             <div class="carouselContainer shadow-sm overflow-hidden rounded-4 position-relative">
                                 <img src="images/1-6.jpg" class="w-100 rounded-4 hoverImg">
                                 <div class="w-100 h-100 d-flex flex-column align-items-center">
-                                    <p class="textTransparent position-absolute textHover1 fs-5 h6 text-center">پویا
-                                        اسدی
-                                        <br> 9.9K
+                                    <p class="textTransparent position-absolute textHover1 fs-5 h6 text-center">جانی دپ
+
+                                        <br> 3.6K
                                     </p><br><br>
                                 </div>
                             </div>
@@ -456,9 +396,9 @@
                             <div class="carouselContainer shadow-sm overflow-hidden rounded-4 position-relative">
                                 <img src="images/1-7.jpg" class="w-100 rounded-4 hoverImg">
                                 <div class="w-100 h-100 d-flex flex-column align-items-center">
-                                    <p class="textTransparent position-absolute textHover1 fs-5 h6 text-center">پویا
-                                        اسدی
-                                        <br> 9.9K
+                                    <p class="textTransparent position-absolute textHover1 fs-5 h6 text-center">
+                                        آلپاچینو
+                                        <br> 3.3K
                                     </p><br><br>
                                 </div>
                             </div>
@@ -468,9 +408,10 @@
                             <div class="carouselContainer shadow-sm overflow-hidden rounded-4 position-relative">
                                 <img src="images/1-8.jpg" class="w-100 rounded-4 hoverImg">
                                 <div class="w-100 h-100 d-flex flex-column align-items-center">
-                                    <p class="textTransparent position-absolute textHover1 fs-5 h6 text-center">پویا
-                                        اسدی
-                                        <br> 9.9K
+                                    <p class="textTransparent position-absolute textHover1 fs-5 h6 text-center">اسنوپ
+                                        داگ
+
+                                        <br> 3K
                                     </p><br><br>
                                 </div>
                             </div>
@@ -496,6 +437,8 @@
 
 
 
+
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 T d-flex align-items-center justify-content-between text-dark px-3 px-lg-5">
@@ -507,217 +450,434 @@
                 </div>
             </div>
             <hr class="line mx-auto">
-            <div class="col-12 col-lg-6 pe-3 pe-lg-5">
+            <div class="col-12 col-lg-6 pe-2 pe-lg-5">
                 <div class="row">
-                    <div class="col-12 d-flex numbers  mb-0 justify-content-end">
-                        <p class="mb-0">تعداد</p>
+                    <div class="col-12 d-flex numbers position-relative mb-0 justify-content-end">
+                        <p class="mb-0 position-absolute">تعداد</p>
                     </div>
                     <div
-                        class="col-12 d-flex align-items-center justify-content-between mb-2 mb-lg-3 categoriesHover py-2">
-                        <div>
+                        class="col-12 d-flex align-items-center justify-content-between mb-2 mb-lg-3 categoriesHover position-relative py-2">
+                        <a href="#" class="d-block w-100 text-decoration-none text-dark">
                             <span class="categoriesTitle ps-3">1</span>
                             <img src="images/2-1.jpg" class="categoriesPic border rounded-3 ms-3">
                             <span class="categoriesTitle">منظره</span>
-                        </div>
-                        <div>
-                            <span class="categoriesTitle ps-1 ms-3">120k</span>
-                        </div>
+                            <span class="categoriesTitle position-absolute">120k</span></a>
                     </div>
-                </div>
-                <div class="col-12 d-flex align-items-center justify-content-between mb-2 mb-lg-3 categoriesHover py-2">
-                    <div>
-                        <span class="categoriesTitle ps-3">2</span>
-                        <img src="images/2-2.jpg" class="categoriesPic border rounded-3 ms-3">
-                        <span class="categoriesTitle">سیاه سفید</span>
+                    <div
+                        class="col-12 d-flex align-items-center justify-content-between mb-2 mb-lg-3 categoriesHover position-relative py-2">
+                        <a href="#" class="d-block w-100 text-decoration-none text-dark">
+                            <span class="categoriesTitle ps-3">2</span>
+                            <img src="images/2-2.jpg" class="categoriesPic border rounded-3 ms-3">
+                            <span class="categoriesTitle">سیاه سفید</span>
+                            <span class="categoriesTitle position-absolute">117K</span></a>
                     </div>
-                    <div>
-                        <span class="categoriesTitle ps-1 ms-3">117.3k</span>
+                    <div
+                        class="col-12 d-flex align-items-center justify-content-between mb-2 mb-lg-3 categoriesHover position-relative py-2">
+                        <a href="#" class="d-block w-100 text-decoration-none text-dark"><span
+                                class="categoriesTitle ps-3">3</span>
+                            <img src="images/2-3.jpg" class="categoriesPic border rounded-3 ms-3">
+                            <span class="categoriesTitle ">طبیعت بی جان</span>
+                            <span class="categoriesTitle position-absolute">108k</span></a>
                     </div>
-                </div>
-                <div class="col-12 d-flex align-items-center justify-content-between mb-2 mb-lg-3 categoriesHover py-2">
-                    <div><span class="categoriesTitle ps-3">3</span>
-                        <img src="images/2-3.jpg" class="categoriesPic border rounded-3 ms-3">
-                        <span class="categoriesTitle">طبیعت بی جان</span>
+                    <div
+                        class="col-12 d-flex align-items-center justify-content-between mb-2 mb-lg-3 categoriesHover position-relative py-2">
+                        <a href="#" class="d-block w-100 text-decoration-none text-dark"><span
+                                class="categoriesTitle ps-3">4</span>
+                            <img src="images/2-4.jpg" class="categoriesPic border rounded-3 ms-3">
+                            <span class="categoriesTitle ">حیات وحش</span>
+                            <span class="categoriesTitle position-absolute">102k</span></a>
                     </div>
-                    <div>
-                        <span class="categoriesTitle ps-1 ms-3">108k</span>
-                    </div>
-                </div>
-                <div class="col-12 d-flex align-items-center justify-content-between mb-2 mb-lg-3 categoriesHover py-2">
-                    <div><span class="categoriesTitle ps-3">4</span>
-                        <img src="images/2-4.jpg" class="categoriesPic border rounded-3 ms-3">
-                        <span class="categoriesTitle">حیات وحش</span>
-                    </div>
-                    <div>
-                        <span class="categoriesTitle ps-1 ms-3">102k</span>
-                    </div>
-                </div>
-                <div class="col-12 d-flex align-items-center justify-content-between mb-2 mb-lg-3 categoriesHover py-2">
-                    <div><span class="categoriesTitle ps-3">5</span>
-                        <img src="images/2-5.jpg" class="categoriesPic border rounded-3 ms-3">
-                        <span class="categoriesTitle">پرتره</span>
-                    </div>
-                    <div>
-                        <span class="categoriesTitle ps-1 ms-3">99.9k</span>
+                    <div
+                        class="col-12 d-flex align-items-center justify-content-between mb-2 mb-lg-3 categoriesHover position-relative py-2">
+                        <a href="#" class="d-block w-100 text-decoration-none text-dark"><span
+                                class="categoriesTitle ps-3">5</span>
+                            <img src="images/2-5.jpg" class="categoriesPic border rounded-3 ms-3">
+                            <span class="categoriesTitle ">پرتره</span>
+                            <span class="categoriesTitle position-absolute">96k</span></a>
                     </div>
                 </div>
             </div>
             <div class="col-6 d-none d-lg-block ps-3 ps-lg-5">
                 <div class="row">
-                    <div class="col-12 d-flex numbers mb-0 justify-content-end">
-                        <p class="mb-0">تعداد</p>
+                    <div class="col-12 d-flex numbers position-relative mb-0 justify-content-end">
+                        <p class="mb-0 position-absolute">تعداد</p>
                     </div>
                     <div
-                        class="col-12 d-flex align-items-center justify-content-between mb-2 mb-lg-3 categoriesHover py-2">
-                        <div><span class="categoriesTitle ps-3">6</span>
+                        class="col-12 d-flex align-items-center justify-content-between mb-2 mb-lg-3 categoriesHover position-relative py-2">
+                        <a href="#" class="d-block w-100 text-decoration-none text-dark">
+                            <span class="categoriesTitle ps-3">6</span>
                             <img src="images/2-6.jpg" class="categoriesPic border rounded-3 ms-3">
                             <span class="categoriesTitle">انتزاعی</span>
-                        </div>
-                        <div>
-                            <span class="categoriesTitle ps-1 ms-3">93k</span>
-                        </div>
+                            <span class="categoriesTitle position-absolute">93k</span></a>
                     </div>
-                </div>
-                <div class="col-12 d-flex align-items-center justify-content-between mb-2 mb-lg-3 categoriesHover py-2">
-                    <div><span class="categoriesTitle ps-3">7</span>
-                        <img src="images/2-7.jpg" class="categoriesPic border rounded-3 ms-3">
-                        <span class="categoriesTitle">مد</span>
+                    <div
+                        class="col-12 d-flex align-items-center justify-content-between mb-2 mb-lg-3 categoriesHover position-relative py-2">
+                        <a href="#" class="d-block w-100 text-decoration-none text-dark">
+                            <span class="categoriesTitle ps-3">2</span>
+                            <img src="images/2-7.jpg" class="categoriesPic border rounded-3 ms-3">
+                            <span class="categoriesTitle">مد</span>
+                            <span class="categoriesTitle position-absolute">72K</span></a>
                     </div>
-                    <div>
-                        <span class="categoriesTitle ps-1 ms-3">72k</span>
+                    <div
+                        class="col-12 d-flex align-items-center justify-content-between mb-2 mb-lg-3 categoriesHover position-relative py-2">
+                        <a href="#" class="d-block w-100 text-decoration-none text-dark"><span
+                                class="categoriesTitle ps-3">3</span>
+                            <img src="images/2-8.jpg" class="categoriesPic border rounded-3 ms-3">
+                            <span class="categoriesTitle ">خیابانی</span>
+                            <span class="categoriesTitle position-absolute">66.9</span></a>
                     </div>
-                </div>
-                <div class="col-12 d-flex align-items-center justify-content-between mb-2 mb-lg-3 categoriesHover py-2">
-                    <div><span class="categoriesTitle ps-3">8</span>
-                        <img src="images/2-8.jpg" class="categoriesPic border rounded-3 ms-3">
-                        <span class="categoriesTitle">خیابانی</span>
+                    <div
+                        class="col-12 d-flex align-items-center justify-content-between mb-2 mb-lg-3 categoriesHover position-relative py-2">
+                        <a href="#" class="d-block w-100 text-decoration-none text-dark"><span
+                                class="categoriesTitle ps-3">4</span>
+                            <img src="images/2-9.jpg" class="categoriesPic border rounded-3 ms-3">
+                            <span class="categoriesTitle ">معماری</span>
+                            <span class="categoriesTitle position-absolute">42K</span></a>
                     </div>
-                    <div>
-                        <span class="categoriesTitle ps-1 ms-3">66.9k</span>
-                    </div>
-                </div>
-                <div class="col-12 d-flex align-items-center justify-content-between mb-2 mb-lg-3 categoriesHover py-2">
-                    <div><span class="categoriesTitle ps-3">9</span>
-                        <img src="images/2-9.jpg" class="categoriesPic border rounded-3 ms-3">
-                        <span class="categoriesTitle">معماری</span>
-                    </div>
-                    <div>
-                        <span class="categoriesTitle ps-1 ms-3">42k</span>
-                    </div>
-                </div>
-                <div class="col-12 d-flex align-items-center justify-content-between mb-2 mb-lg-3 categoriesHover py-2">
-                    <div><span class="categoriesTitle ps-3 p10">10</span>
-                        <img src="images/2-10.jpg" class="categoriesPic1 border rounded-3 ms-3">
-                        <span class="categoriesTitle">نجومی</span>
-                    </div>
-                    <div>
-                        <span class="categoriesTitle ps-1 ms-3">33k</span>
+                    <div
+                        class="col-12 d-flex align-items-center justify-content-between mb-2 mb-lg-3 categoriesHover position-relative py-2">
+                        <a href="#" class="d-block w-100 text-decoration-none text-dark"><span
+                                class="categoriesTitle ps-3">5</span>
+                            <img src="images/2-10.jpg" class="categoriesPic border rounded-3 ms-3">
+                            <span class="categoriesTitle ">نجومی</span>
+                            <span class="categoriesTitle position-absolute">33K</span></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 
 
 
 
 
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 T py-3 px-3 px-lg-5">گالری تصاویر</div>
-            <div class="col-12 col-md-6 col-lg-4 mb-4" dir="ltr">
-                <div class="card shadow-sm border-0 cardHover overflow-hidden">
-                    <div class="overflow-hidden">
-                        <img src="images/3-1.jpg" class="card-img-top cardImg">
+        <div class="row pt-4">
+            <div class="col-12 T pb-3 px-3 px-lg-5">گالری تصاویر</div>
+            <div class="col-12 px-3 ps-md-1 pe-md-4 pe-lg-5 ps-lg-1 col-md-6 col-lg-4 mb-4">
+                <div class="shadow-sm dadH rounded">
+                    <div class="position-relative rounded-top overflow-hidden">
+                        <div class="shCart position-absolute rounded-circle"><a href="#"
+                                class="d-block shCartA rounded-circle"><i
+                                    class="fa-solid fa-cart-arrow-down shCartI"></i></a></div>
+                        <a href="#" class="d-block w-100 h-100"><img src="images/3-1.jpg"
+                                class="rounded-top w-100 hoverImg"></a>
                     </div>
-                    <div class="card-body position-relative d-flex pt-3 pb-2" dir="ltr">
-                        <a href="#" class=" d-block aCard">
-                            <a href="#"><img src="images/3-p1.png"
-                                    class="shadowAP profilePic position-absolute border border-3 border-white rounded-1"></a>
-                            <a href="#" class="accountName my-2  bottom-0 text-decoration-none ">
-                                <span>Pooya Assadi</span></a>
-                            <a href="#" class=" like position-absolute"><i class="fa-regular fa-heart"></i></a>
-                            <a href="#" class="comment position-absolute"><i class="fa-regular fa-comment"></i></a>
+                    <div class="information position-relative rounded-bottom">
+                        <a href="#" class="d-block w-100 h-100">
+                            <a href="#"><img src="images/3-p1.png" class="shadowAP accountPic position-absolute"></a><a
+                                href="#" class="accountName position-absolute bottom-0 text-decoration-none">Pooya
+                                Assadi</a>
+                            <a href="#" class=" like position-absolute text-decoration-none"><span
+                                    class="cm">130</span><i class="fa-regular fa-heart pe-1"></i></a>
+                            <a href="#" class="comment position-absolute text-decoration-none"><span
+                                    class="cm">50</span><i class="fa-regular fa-comment pe-1"></i></a>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
-                <div class="card shadow-sm border-0 cardHover overflow-hidden">
-                    <div class="overflow-hidden">
-                        <img src="images/3-2.jpg" class="card-img-top cardImg">
+            <div class="col-12 px-3 ps-md-4 pe-md-1 px-lg-4 col-md-6 col-lg-4 mb-4">
+                <div class="shadow-sm dadH rounded">
+                    <div class="position-relative rounded-top overflow-hidden">
+                        <div class="shCart position-absolute rounded-circle"><a href="#"
+                                class="d-block shCartA rounded-circle"><i
+                                    class="fa-solid fa-cart-arrow-down shCartI"></i></a></div>
+                        <a href="#" class="d-block w-100 h-100"><img src="images/3-2.jpg"
+                                class="rounded-top w-100 hoverImg"></a>
                     </div>
-                    <div class="card-body position-relative d-flex pt-3 pb-2" dir="ltr">
-                        <a href="#" class=" d-block aCard">
-                            <a href="#"><img src="images/3-p1.png"
-                                    class="shadowAP profilePic position-absolute border border-3 border-white rounded-1"></a>
-                            <a href="#" class="accountName my-2  bottom-0 text-decoration-none ">
-                                <span>Pooya Assadi</span></a>
-                            <a href="#" class=" like position-absolute"><i class="fa-regular fa-heart"></i></a>
-                            <a href="#" class="comment position-absolute"><i class="fa-regular fa-comment"></i></a>
+                    <div class="information position-relative rounded-bottom">
+                        <a href="#" class="d-block w-100 h-100">
+                            <a href="#"><img src="images/3-p2.jpg" class="shadowAP accountPic position-absolute"></a><a
+                                href="#" class="accountName position-absolute bottom-0 text-decoration-none">Erfan
+                                Irani</a>
+                            <a href="#" class=" like position-absolute text-decoration-none"><span
+                                    class="cm">633</span><i class="fa-regular fa-heart pe-1"></i></a>
+                            <a href="#" class="comment position-absolute text-decoration-none"><span
+                                    class="cm">18</span><i class="fa-regular fa-comment pe-1"></i></a>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
-                <div class="card shadow-sm border-0 cardHover overflow-hidden">
-                    <div class="overflow-hidden">
-                        <img src="images/3-3.jpg" class="card-img-top cardImg">
+            <div class="col-12 px-3 ps-md-1 pe-md-4 ps-lg-5 pe-lg-1 col-md-6 col-lg-4 mb-4">
+                <div class="shadow-sm dadH rounded">
+                    <div class="position-relative rounded-top overflow-hidden">
+                        <div class="shCart position-absolute rounded-circle"><a href="#"
+                                class="d-block shCartA rounded-circle"><i
+                                    class="fa-solid fa-cart-arrow-down shCartI"></i></a></div>
+                        <a href="#" class="d-block w-100 h-100"><img src="images/3-3.jpg"
+                                class="rounded-top w-100 hoverImg"></a>
                     </div>
-                    <div class="card-body position-relative d-flex pt-3 pb-2" dir="ltr">
-                        <a href="#" class=" d-block aCard">
-                            <a href="#"><img src="images/3-p1.png"
-                                    class="shadowAP profilePic position-absolute border border-3 border-white rounded-1"></a>
-                            <a href="#" class="accountName my-2  bottom-0 text-decoration-none ">
-                                <span>Pooya Assadi</span></a>
-                            <a href="#" class=" like position-absolute"><i class="fa-regular fa-heart"></i></a>
-                            <a href="#" class="comment position-absolute"><i class="fa-regular fa-comment"></i></a>
+                    <div class="information position-relative rounded-bottom">
+                        <a href="#" class="d-block w-100 h-100">
+                            <a href="#"><img src="images/3-p3.jpg" class="shadowAP accountPic position-absolute"></a><a
+                                href="#" class="accountName position-absolute bottom-0 text-decoration-none">Ali
+                                Karimi</a>
+                            <a href="#" class=" like position-absolute text-decoration-none"><span
+                                    class="cm">225</span><i class="fa-regular fa-heart pe-1"></i></a>
+                            <a href="#" class="comment position-absolute text-decoration-none"><span
+                                    class="cm">66</span><i class="fa-regular fa-comment pe-1"></i></a>
                         </a>
                     </div>
                 </div>
+            </div>
+            <div class="col-12 px-3 ps-md-4 pe-md-1 pe-lg-5 ps-lg-1 col-md-6 col-lg-4 mb-4">
+                <div class="shadow-sm dadH rounded">
+                    <div class="position-relative rounded-top overflow-hidden">
+                        <div class="shCart position-absolute rounded-circle"><a href="#"
+                                class="d-block shCartA rounded-circle"><i
+                                    class="fa-solid fa-cart-arrow-down shCartI"></i></a></div>
+                        <a href="#" class="d-block w-100 h-100"><img src="images/3-4.jpg"
+                                class="rounded-top w-100 hoverImg"></a>
+                    </div>
+                    <div class="information position-relative rounded-bottom">
+                        <a href="#" class="d-block w-100 h-100">
+                            <a href="#"><img src="images/3-p4.jpg" class="shadowAP accountPic position-absolute"></a><a
+                                href="#" class="accountName position-absolute bottom-0 text-decoration-none">Gholi</a>
+                            <a href="#" class=" like position-absolute text-decoration-none"><span
+                                    class="cm">324</span><i class="fa-regular fa-heart pe-1"></i></a>
+                            <a href="#" class="comment position-absolute text-decoration-none"><span
+                                    class="cm">87</span><i class="fa-regular fa-comment pe-1"></i></a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 px-3 ps-md-1 pe-md-4 px-lg-4 col-md-6 col-lg-4 mb-4">
+                <div class="shadow-sm dadH rounded">
+                    <div class="position-relative rounded-top overflow-hidden">
+                        <div class="shCart position-absolute rounded-circle"><a href="#"
+                                class="d-block shCartA rounded-circle"><i
+                                    class="fa-solid fa-cart-arrow-down shCartI"></i></a></div>
+                        <a href="#" class="d-block w-100 h-100"><img src="images/3-5.jpg"
+                                class="rounded-top w-100 hoverImg"></a>
+                    </div>
+                    <div class="information position-relative rounded-bottom">
+                        <a href="#" class="d-block w-100 h-100">
+                            <a href="#"><img src="images/3-p5.jpg" class="shadowAP accountPic position-absolute"></a><a
+                                href="#" class="accountName position-absolute bottom-0 text-decoration-none">GHazanfar
+                                Hoseini</a>
+                            <a href="#" class=" like position-absolute text-decoration-none"><span
+                                    class="cm pe-1">900</span><i class="fa-regular fa-heart pe-1"></i></a>
+                            <a href="#" class="comment position-absolute text-decoration-none"><span
+                                    class="cm">210</span><i class="fa-regular fa-comment pe-1"></i></a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 px-3 ps-md-4 pe-md-1 ps-lg-5 pe-lg-1 col-md-6 col-lg-4 mb-4">
+                <div class="shadow-sm dadH rounded">
+                    <div class="position-relative rounded-top overflow-hidden">
+                        <div class="shCart position-absolute rounded-circle"><a href="#"
+                                class="d-block shCartA rounded-circle"><i
+                                    class="fa-solid fa-cart-arrow-down shCartI"></i></a></div>
+                        <a href="#" class="d-block w-100 h-100"><img src="images/3-6.jpg"
+                                class="rounded-top w-100 hoverImg"></a>
+                    </div>
+                    <div class="information position-relative rounded-bottom">
+                        <a href="#" class="d-block w-100 h-100">
+                            <a href="#"><img src="images/3-p6.jpg" class="shadowAP accountPic position-absolute"></a><a
+                                href="#" class="accountName position-absolute bottom-0 text-decoration-none">Ali
+                                Daei</a>
+                            <a href="#" class=" like position-absolute text-decoration-none"><span
+                                    class="cm">810</span><i class="fa-regular fa-heart pe-1"></i></a>
+                            <a href="#" class="comment position-absolute text-decoration-none"><span
+                                    class="cm">66</span><i class="fa-regular fa-comment pe-1"></i></a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 px-3 ps-md-1 pe-md-4 pe-lg-5 ps-lg-1 col-md-6 col-lg-4 mb-4">
+                <div class="shadow-sm dadH rounded">
+                    <div class="position-relative rounded-top overflow-hidden">
+                        <div class="shCart position-absolute rounded-circle"><a href="#"
+                                class="d-block shCartA rounded-circle"><i
+                                    class="fa-solid fa-cart-arrow-down shCartI"></i></a></div>
+                        <a href="#" class="d-block w-100 h-100"><img src="images/3-7.png"
+                                class="rounded-top w-100 hoverImg"></a>
+                    </div>
+                    <div class="information position-relative rounded-bottom">
+                        <a href="#" class="d-block w-100 h-100">
+                            <a href="#"><img src="images/3-p7.jpg" class="shadowAP accountPic position-absolute"></a><a
+                                href="#"
+                                class="accountName position-absolute bottom-0 text-decoration-none">Alpachino</a>
+                            <a href="#" class=" like position-absolute text-decoration-none"><span
+                                    class="cm">666</span><i class="fa-regular fa-heart pe-1"></i></a>
+                            <a href="#" class="comment position-absolute text-decoration-none"><span
+                                    class="cm">93</span><i class="fa-regular fa-comment pe-1"></i></a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 px-3 ps-md-4 pe-md-1 px-lg-4 col-md-6 col-lg-4 mb-4">
+                <div class="shadow-sm dadH rounded">
+                    <div class="position-relative rounded-top overflow-hidden">
+                        <div class="shCart position-absolute rounded-circle"><a href="#"
+                                class="d-block shCartA rounded-circle"><i
+                                    class="fa-solid fa-cart-arrow-down shCartI"></i></a></div>
+                        <a href="#" class="d-block w-100 h-100"><img src="images/3-8.jpg"
+                                class="rounded-top w-100 hoverImg"></a>
+                    </div>
+                    <div class="information position-relative rounded-bottom">
+                        <a href="#" class="d-block w-100 h-100">
+                            <a href="#"><img src="images/3-p8.jpg" class="shadowAP accountPic position-absolute"></a><a
+                                href="#" class="accountName position-absolute bottom-0 text-decoration-none">Johnny
+                                Depp</a>
+                            <a href="#" class=" like position-absolute text-decoration-none"><span
+                                    class="cm">411</span><i class="fa-regular fa-heart pe-1"></i></a>
+                            <a href="#" class="comment position-absolute text-decoration-none"><span
+                                    class="cm">72</span><i class="fa-regular fa-comment pe-1"></i></a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 px-3 ps-md-1 pe-md-4 ps-lg-5 pe-lg-1 col-md-6 col-lg-4 mb-4 d-md-none d-lg-block">
+                <div class="shadow-sm dadH rounded">
+                    <div class="position-relative rounded-top overflow-hidden">
+                        <div class="shCart position-absolute rounded-circle"><a href="#"
+                                class="d-block shCartA rounded-circle"><i
+                                    class="fa-solid fa-cart-arrow-down shCartI"></i></a></div>
+                        <a href="#" class="d-block w-100 h-100"><img src="images/3-9.jpg"
+                                class="rounded-top w-100 hoverImg"></a>
+                    </div>
+                    <div class="information position-relative rounded-bottom">
+                        <a href="#" class="d-block w-100 h-100">
+                            <a href="#"><img src="images/3-p9.jpg" class="shadowAP accountPic position-absolute"></a><a
+                                href="#" class="accountName position-absolute bottom-0 text-decoration-none">Brad
+                                Pitt</a>
+                            <a href="#" class=" like position-absolute text-decoration-none"><span
+                                    class="cm">363</span><i class="fa-regular fa-heart pe-1"></i></a>
+                            <a href="#" class="comment position-absolute text-decoration-none"><span
+                                    class="cm">45</span><i class="fa-regular fa-comment pe-1"></i></a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 px-5 d-flex justify-content-center">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination px-5">
+                        <li class="page-item">
+                            <p class="page-link bgPgF rounded-0 rounded-end text-white VazirBFont" href="#">قبلی</p>
+                        </li>
+                        <li class="page-item"><a class="page-link bgPg1 text-white" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link bgPg2 text-dark" href="#">2</a></li>
+                        <li class="page-item d-none d-sm-block"><a class="page-link bgPg2 text-dark" href="#">3</a>
+                        </li>
+                        <li class="page-item"><a class="page-link bgPg2 text-dark" href="#">...</a></li>
+                        <li class="page-item"><a class="page-link bgPg2 text-dark" href="#">300K</a></li>
+                        <li class="page-item">
+                            <a class="page-link bgPgL rounded-0 rounded-start text-white VazirBFont" href="#">بعدی</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </div>
 
 
 
-    
 
 
 
+    <div class="container-fluid">
+        <div class="row FtBgColor">
+            <div class="col-12 px-5">
+                <div class="row">
+                    <div class="col-12 py-5 col-xl-6 text-white">
+                        <p class="text-center VazirFont">با ثبت ایمیل از جدید ترین بروزرسانی ها،امکانات و خدمات سایت
+                            باخبر شوید</p>
+                        <form>
+                            <div class="form-group d-flex px-sm-5">
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="ایمیل">
+                                <button type="submit" class="btn btn-primary me-3 VazirFont IBg border-0">ثبت</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-12  py-xl-5 col-xl-6 text-white">
+                        <p class="text-center VazirFont">ما را در شبکه های اجتماعی دنبال کنید و با ما در ارتباط
+                            باشید
+                        </p>
+                        <div class="d-flex justify-content-center">
+                            <a href="#" class="text-white d-block IBg rounded-4 px-2 py-2 mx-1"><i
+                                    class="bi bi-twitter fs-4 rounded-3 px-1"></i></a>
+                            <a href="#" class="text-white d-block IBg rounded-4 px-2 py-2 mx-1"><i
+                                    class="bi bi-instagram fs-4 rounded-3 px-1"></i></a>
+                            <a href="#" class="text-white d-block IBg rounded-4 px-2 py-2 mx-1"><i
+                                    class="bi bi-telegram fs-4 rounded-3 px-1"></i></a>
+                            <a href="#" class="text-white d-block IBg rounded-4 px-2 py-2 mx-1"><i
+                                    class="bi bi-whatsapp fs-4 rounded-3 px-1"></i></a>
+                        </div>
+                        <hr class="w-100 mx-auto mt-5 mb-4 d-lg-none ">
+                    </div>
+                    <hr class="FtLineW d-none d-lg-block my-lg-4 mb-lg-5 mt-xl-0 mx-auto text-white">
+                </div>
+            </div>
 
+            <div class="col-12 pt-4">
+                <div class="row px-3 px-sm-5 px-lg-5">
+                    <div class="col-12 col-lg-5 col-xl-5 px-xl-5 ms-xl-5 mb-5 ms-lg-2">
+                        <div class="d-flex flex-column justify-content-center align-items-center text-white ">
+                            <i class="bi bi-camera-fill bg-white rounded-circle px-3 py-2 mb-2 IClr fs-4"></i>
+                            <p class="FtVazirB mb-2">لنز</p>
+                            <p class="FtVazir px-3">یکی از حرفه ای ترین و پرکاربردترین سایت های
+                                ارائه و انعکاس عکس های هنری در حوزه های
+                                مختلف. بخرید، بفروشید و با دیگران به اشتراک بگذارید</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2 mb-lg-5">
+                        <ul class="nav p-0 flex-column text-center ">
+                            <h5 class="UlVazirH text-white pb-3">حساب کاربری</h5>
+                            <li class="nav-item mb-2 VazirFont"><a href="#" class="nav-link p-0 text-light ">پروفایل</a>
+                            </li>
+                            <li class="nav-item mb-2 VazirFont"><a href="#" class="nav-link p-0 text-light">علاقه
+                                    مندی</a></li>
+                            <li class="nav-item mb-2 VazirFont"><a href="#" class="nav-link p-0 text-light">سبد خرید
+                                </a></li>
+                            <li class="nav-item mb-2 VazirFont"><a href="#" class="nav-link p-0 text-light">تنظیمات</a>
+                            </li>
+                            <li class="nav-item mb-2 VazirFont"><a href="#" class="nav-link p-0 text-light">شارژ
+                                    حساب
+                                    کاربری</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2 me-lg-4">
+                        <ul class="nav p-0 flex-column text-center">
+                            <h5 class="UlVazirH  text-white pb-3">منابع</h5>
+                            <li class="nav-item mb-2 VazirFont"><a href="#" class="nav-link p-0 text-light">یادگیری</a>
+                            </li>
+                            <li class="nav-item mb-2 VazirFont"><a href="#" class="nav-link p-0 text-light">بلاگ</a>
+                            </li>
+                            <li class="nav-item mb-2 VazirFont"><a href="#" class="nav-link p-0 text-light">مستندات</a>
+                            </li>
+                            <li class="nav-item mb-2 VazirFont"><a href="#" class="nav-link p-0 text-light">خبرنامه</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-4 col-lg-2 me-lg-3">
+                        <ul class="nav p-0 flex-column text-center">
+                            <h5 class="UlVazirH  text-white pb-3">با ما</h5>
+                            <li class="nav-item mb-2 VazirFont"><a href="#" class="nav-link p-0 text-light">سوالات
+                                    متداول</a></li>
+                            <li class="nav-item mb-2 VazirFont"><a href="#" class="nav-link p-0 text-light">درباره
+                                    ما</a></li>
+                            <li class="nav-item mb-2 VazirFont"><a href="#" class="nav-link p-0 text-light">شرکاء</a>
+                            </li>
+                            <li class="nav-item mb-2 VazirFont"><a href="#" class="nav-link p-0 text-light">پشتیبانی</a>
+                            </li>
+                        </ul>
+                    </div>
 
+                    <hr class="FtLineW text-white mx-auto">
+                </div>
+            </div>
+            <div class="col-12 px-5 px-xl-4">
+                <small>
+                    <p class=" px-3 px-sm-5 mx-xl-5 VazirFont text-light ">کلیه حقوق این سایت محفوظ است</p>
+                </small>
+            </div>
+        </div>
+    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
 </body>
 
 </html>
